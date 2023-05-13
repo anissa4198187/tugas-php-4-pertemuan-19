@@ -43,16 +43,16 @@ mysqli_close($conn);
 				</tr>
 			</thead>
 			<tbody>
-			<a href="create.php" class="btn btn-primary">INPUT USERr</a>
+			<a href="./create.php" class="btn btn-primary">INPUT USERr</a>
 				<?php $no = 1; foreach($rows as $row): ?>
 					<tr>
 						<td><?php echo $no; ?></td>
 						<td>
-							<a href='detail.php?id=<?php echo $row['id']; ?>' class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Detail"><i class="fas fa-eye" ></i></a>
-							<a href='update.php?id=<?php echo $row['id']; ?>' class="btn btn-warning btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="fas fa-edit"></i></a>
-							<a href='delete.php?id=<?php echo $row['id']; ?>' class="btn btn-danger btn-sm delete-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')"><i class="fas fa-trash"></i></a>
+							<a href="./detail.php" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Detail"><i class="fas fa-eye" ></i></a>
+							<a href="./update.php" class="btn btn-warning btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="fas fa-edit"></i></a>
+							<a href="./delete.php" class="btn btn-danger btn-sm delete-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')"><i class="fas fa-trash"></i></a>
 						</td>
-						<td><img src='uploads/<?php echo $row['avatar']; ?>' width='50'></td>
+						<td><img src= "./0d9c9626bf4e24612c90465fbaa243a0.jpg" width='50'></td>
 						<td><?php echo $row['name']; ?></td>
 						<td><?php echo $row['email']; ?></td>
 						<td><?php echo $row['phone']; ?></td>
